@@ -2,7 +2,18 @@ package com.example.dummy;
 
 public class DummyStudent extends Student{
 
-    public DummyStudent(String name, String score) {
-        super(name, score);
+    public DummyStudent() {
+        super(null, null);
     }
+
+    @Override
+    public String getName() {
+        return "Dummy";
+    }
+
+    @Override
+    public String getScore() {
+        return "Dummy";
+    }
+
 }
